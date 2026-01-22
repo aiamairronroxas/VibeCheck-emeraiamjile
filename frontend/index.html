@@ -1,27 +1,41 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>VibeCheck 411L</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>VibeCheck 411L</h1>
-  <p>Click buttons. This page will fetch data from your Node.js API.</p>
+  <div class="container">
+    <header>
+      <h1>VibeCheck 411L</h1>
+      <p class="subtitle">
+        Click a button and let the vibes flow ✨
+      </p>
+    </header>
 
-  <div>
-    <button id="btnFortune">🔮 Fortune</button>
-    <button id="btnJoke">😂 Joke</button>
-    <button data-mood="happy" class="btnMood">😄 Happy</button>
-    <button data-mood="tired" class="btnMood">🥱 Tired</button>
-    <button data-mood="stressed" class="btnMood">😵‍💫 Stressed</button>
-    <button id="btnSmash">💥 SMASH!</button>
-    <button id="btnSecret">🕵️ Secret</button>
+    <section class="controls">
+      <button id="btnFortune">🔮 Fortune</button>
+      <button id="btnJoke">😂 Joke</button>
+
+      <button data-mood="happy" class="btnMood">😄 Happy</button>
+      <button data-mood="tired" class="btnMood">🥱 Tired</button>
+      <button data-mood="stressed" class="btnMood">😵‍💫 Stressed</button>
+
+      <button id="btnSmash" class="danger">💥 SMASH!</button>
+      <button id="btnSecret" class="secret">🕵️ Secret</button>
+    </section>
+
+    <section class="output">
+      <h2>Output</h2>
+      <pre id="out">Ready...</pre>
+    </section>
   </div>
 
-  <h2>Output</h2>
-  <pre id="out">Ready...</pre>
-
+  <!-- JS -->
   <script src="app.js"></script>
 </body>
 </html>

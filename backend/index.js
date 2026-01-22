@@ -29,7 +29,7 @@ const fortunes = [
 
 const jokes = [
   "Why did the developer go broke? Because they used up all their cache.",
-  "My code has two moods: works or why-is-this-happening..",
+  "My code has two moods: works or why-is-this-happening.",
 ];
 
 const vibeMap = {

@@ -20,3 +20,13 @@ This should be the output in terminal
 ```
 VibeCheck API running at http://localhost:3000
 ```
+
+here are the endpoint list to test in your browser
+Quick endpoint tests (browser)
+
+```
+http://localhost:3000/api/fortune
+http://localhost:3000/api/joke
+http://localhost:3000/api/vibe?mood=happy
+http://localhost:3000/api/smashes
+```
